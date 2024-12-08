@@ -1,0 +1,122 @@
+.main_home {
+    display: flex;
+    flex-direction: column;
+
+    .home_up {
+        display: flex;
+        align-items: center;
+        height: 86vh;
+        
+        
+        h1 {
+            padding-left: 4vw;
+            color: white;
+            width: 3rem;
+            font-size: 3rem;
+
+            @media(min-width: 1085px) {
+                width: 30rem;
+            }
+
+            @media(max-width: 650px) {
+                width: 80%;
+            }
+            @media(min-width: 650px) and (max-width: 1024px) {
+                padding-left: 8%;
+                width: 60%;
+                font-size: 4rem;
+            }
+            
+        }
+        background: url("assets/ui_imgs/home-books.png") no-repeat center center/cover;
+        
+    }
+    
+    .home_down {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1%;
+
+        h2 {
+            padding-left: 2vw;
+            color: #005695;
+            font-size: 40px;
+            @media(max-width: 829px) {
+                text-align: center;
+            }
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+            
+            @media(min-width: 1086px) {
+                padding-left: 4vw;
+            }
+
+            @media(max-width: 1085px) {
+                width: 80%;
+            }
+
+            @media(min-width: 830px) and (max-width: 890px) {
+                padding-right: 4%;
+                width: 30%;
+            }
+            @media(max-width: 829px) {
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2vh;
+                padding: 2%;
+                background-color: #0157944D;
+                border-radius: 10px;
+
+                p {
+                    width: 13vw;
+                    font-size: 20px;
+                }
+                @media(max-width: 1085px) {
+                    p {
+                        padding-right: 5%;
+                        font-size: 15px;
+                    }
+                }
+                @media(max-width: 830px), (max-width: 890px) {
+                    padding: 4%;
+                    font-size: 12px;
+                }
+                @media(max-width: 829px) {
+                    width: 36vw;
+                    p {
+                        text-align: center;
+                        width: auto;
+                        font-size: 30px;
+                    }
+                }
+                @media(max-width: 650px) {
+                    width: 40vw;
+                }
+                @media(min-width: 400px) and (max-width: 530px) {
+                    width: 60vw;
+                }
+
+                @media(max-width: 400px) {
+                    p {
+                        font-size: 25px;
+                    }
+                    width: 60vw;
+                }
+
+
+            }
+        }
+    }
+    
+}

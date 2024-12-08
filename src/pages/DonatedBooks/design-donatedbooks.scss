@@ -1,0 +1,47 @@
+.main_donatedbooks {
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        h2 {
+            align-self: center;
+            color: black;
+            font-size: 36px;
+        }
+        .list_div {
+            display: flex;
+            flex-direction: row;
+            padding-top: 4%;
+            padding-left: 6vw;
+
+            @media (max-width: 650px) {
+                padding-left: 0;
+                align-items: center;
+                flex-direction: column;
+            }
+            .book {
+                padding: 2%;
+                padding-top: 4%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: solid 3px #005695;
+                border-radius: 15px;
+                width: 12vw;
+                min-width: 18rem;
+                @media (max-width: 410px) {
+                    padding-top: 5%;
+                    width: 10vw;
+                    min-width: 16rem;
+                }
+
+                p {
+                    font-size: 20px;
+                    align-items: center;
+                }
+                
+            }
+        }
+    }
+}
