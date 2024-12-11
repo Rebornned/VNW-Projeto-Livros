@@ -1,4 +1,5 @@
 import './design_header.scss';
+import { Link } from "react-router-dom";
 
 function Header() {
   
@@ -12,9 +13,9 @@ function Header() {
             </div>
             <nav>
                 <ul>
-                    <li><a href="/">Início </a></li>
-                    <li><a href="donatedbooks">Livros Doados</a></li>
-                    <li><a href="donation">Quero Doar</a></li>
+                    <li><Link to="VNW-Projeto-Livros/"> Início</Link> </li>
+                    <li><Link to="VNW-Projeto-Livros/donatedbooks"> Livros Doados</Link></li>
+                    <li><Link to="VNW-Projeto-Livros/donation"> Doação</Link></li>
                 </ul>
             </nav>
             <div className='search_input'>

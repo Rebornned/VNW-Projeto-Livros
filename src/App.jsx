@@ -13,9 +13,9 @@ function App() {
     <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/donation" element={<Donation />} />
-          <Route path="/donatedbooks" element={<DonatedBooks />} />
+          <Route path="VNW-Projeto-Livros/" element={<Home />} />
+          <Route path="VNW-Projeto-Livros/donation" element={<Donation />} />
+          <Route path="VNW-Projeto-Livros/donatedbooks" element={<DonatedBooks />} />
         </Routes>
         <Footer />
     </BrowserRouter>

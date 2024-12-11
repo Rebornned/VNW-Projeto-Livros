@@ -14,8 +14,9 @@
             width: 3rem;
             font-size: 3rem;
 
-            @media(min-width: 1085px) {
+            @media(min-width: 1024px) {
                 width: 30rem;
+                font-size: 4rem;
             }
 
             @media(max-width: 650px) {
@@ -29,7 +30,7 @@
             
         }
         background: url("assets/ui_imgs/home-books.png") no-repeat center center/cover;
-        
+        background: url("./ui_imgs/home-books.png") no-repeat center center/cover;
     }
     
     .home_down {
@@ -40,11 +41,10 @@
 
         h2 {
             padding-left: 2vw;
+            text-align: center;
             color: #005695;
             font-size: 40px;
-            @media(max-width: 829px) {
-                text-align: center;
-            }
+            
         }
         div {
             display: flex;
@@ -80,24 +80,22 @@
 
                 p {
                     width: 13vw;
-                    font-size: 20px;
+                    font-size: 1.5rem;
+                    text-align: center;
                 }
                 @media(max-width: 1085px) {
                     p {
                         padding-right: 5%;
-                        font-size: 15px;
                     }
                 }
                 @media(max-width: 830px), (max-width: 890px) {
                     padding: 4%;
-                    font-size: 12px;
                 }
                 @media(max-width: 829px) {
                     width: 36vw;
                     p {
                         text-align: center;
                         width: auto;
-                        font-size: 30px;
                     }
                 }
                 @media(max-width: 650px) {
@@ -108,9 +106,6 @@
                 }
 
                 @media(max-width: 400px) {
-                    p {
-                        font-size: 25px;
-                    }
                     width: 60vw;
                 }
 
