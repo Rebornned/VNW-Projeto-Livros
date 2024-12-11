@@ -20,6 +20,7 @@ $secondary-color: #001b2f;
     div {
         display: flex;
         flex-direction: initial;
+        justify-content: center;
         figure {
             display: flex;
             align-items: center;
@@ -33,10 +34,10 @@ $secondary-color: #001b2f;
             }
             @media(min-width: 344px) and (max-width: 440px) {
                 padding-top: 4%;
-                padding-right: 4vw;
+                padding-right: 2rem;
                 font-size: 23px;;
             }
-
+            text-align: center;
             font-size: 30px;
             color: #E4EEF1;
         }
@@ -84,50 +85,48 @@ $secondary-color: #001b2f;
     .search_input {
         display: flex;
         flex-direction: row;
-        align-items: initial;
+        align-items: center;
         justify-content: center;
+
+
+        border: solid white 2px;
+        background: transparent;
+        border-radius: 15px;
+        outline: none;
+        padding: 0% 1% 0 1%;
+        transition: all 0.3s ease-in-out;
+        gap: 1rem;
 
         @media(max-width: 1096px){
             display: none;
         }
 
         input {
-            border: solid white 2px;
-            width: 100vw;
-            font-size: 20px;
-            background: transparent;
-            border-radius: 15px;
-            width: 18vw;
+            border: none;
             height: 6vh;
-            padding-left: 2vw;
-            padding-right: 3vw;
             color: white;
             outline: none;
-            transition: all 0.3s ease-in-out;
+            font-size: 1rem;
+            background: transparent;
         }
-        input:focus {
+        &:has(input:focus) {
             border-color: #001B2F;
         }
+
         input::placeholder {
             color: white; 
             font-style: italic; 
         }
         button {
-            position: absolute;
-            height: 5vh;
-            width: 3vw;
-            right: 2.5vw;
-            top: 2rem;
             border: none; 
             background-color: transparent; 
-            cursor: pointer; 
-            @media(max-width: 1200px) {
-                right: 3vw;
-            }
-            /*
-            @media(max-height: 650px) {
-                top: 3rem;
-            }*/
+            cursor: pointer;
+            width: 1.2rem;
+            height: 1.2rem;
+            background-image: url("../../../public/assets/ui_imgs/search_button.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        
         }
     }
 }

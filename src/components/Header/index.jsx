@@ -21,7 +21,6 @@ function Header() {
             <div className='search_input'>
                 <input type="text" placeholder='O que você procura?'/>
                 <button name="search_button" alt="" class="">
-                    <img src="assets/ui_imgs/search_button.png" alt="" />
                 </button>
             </div>
         </header>

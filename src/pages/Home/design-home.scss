@@ -37,7 +37,7 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        padding-bottom: 1%;
+        padding-bottom: 2%;
 
         h2 {
             padding-left: 2vw;
@@ -49,24 +49,20 @@
         div {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             
-            @media(min-width: 1086px) {
-                padding-left: 4vw;
-            }
-
-            @media(max-width: 1085px) {
-                width: 80%;
+            @media(max-width: 1231px) {
+                flex-wrap: wrap;
+                padding: 0 3% 0 3%;
             }
 
             @media(min-width: 830px) and (max-width: 890px) {
                 padding-right: 4%;
-                width: 30%;
             }
             @media(max-width: 829px) {
                 flex-direction: column;
                 align-content: center;
                 align-items: center;
-                width: 100%;
             }
 
             figure {
@@ -75,22 +71,26 @@
                 align-items: center;
                 gap: 2vh;
                 padding: 2%;
+                width: 18rem;
                 background-color: #0157944D;
                 border-radius: 10px;
 
                 p {
-                    width: 13vw;
+                    height: 10rem;
                     font-size: 1.5rem;
                     text-align: center;
+                    align-content: initial;
                 }
                 @media(max-width: 1085px) {
                     p {
                         padding-right: 5%;
+                        align-content: center;
                     }
                 }
                 @media(max-width: 830px), (max-width: 890px) {
                     padding: 4%;
                 }
+                /*
                 @media(max-width: 829px) {
                     width: 36vw;
                     p {
@@ -107,7 +107,7 @@
 
                 @media(max-width: 400px) {
                     width: 60vw;
-                }
+                }*/
 
 
             }
