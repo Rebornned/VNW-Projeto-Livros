@@ -11,7 +11,7 @@ function DonatedBooks() {
         // Função para fazer a requisição GET à API
         const fetchBooks = async () => {
             try {
-                const response = await axios.get("http://127.0.0.1:5000/livros"); // Endereço da sua API
+                const response = await axios.get("https://books-api-flask-vnw.onrender.com/livros"); // Endereço da sua API
                 console.log("Livros recebidos:", response.data);  // Adiciona esse log para verificar a resposta
                 setBooks(response.data); // Atualiza o estado com os livros retornados
             } catch (error) {
