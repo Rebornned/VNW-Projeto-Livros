@@ -2,8 +2,7 @@
     section {
         display: flex;
         flex-direction: column;
-        height: 100vh;
-
+        padding: 2% 2% 4vh 2%;
         h2 {
             align-self: center;
             color: black;
@@ -11,9 +10,13 @@
         }
         .list_div {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             padding-top: 4%;
-            padding-left: 6vw;
+            justify-content: center;
+            align-items: center;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            gap: 6vh;
 
             @media (max-width: 650px) {
                 padding-left: 0;
@@ -34,6 +37,11 @@
                     padding-top: 5%;
                     width: 10vw;
                     min-width: 16rem;
+                }
+                img {
+                    max-width: 25vw;        
+                    max-height: 25vh;        
+                    object-fit: contain; 
                 }
 
                 p {

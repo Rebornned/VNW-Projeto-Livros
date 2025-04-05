@@ -7,7 +7,7 @@
         align-items: center;
         height: 86vh;
         
-        
+        background: url("../../../public/assets/ui_imgs/home-books.png") no-repeat center center/cover;
         h1 {
             padding-left: 4vw;
             color: white;
@@ -27,10 +27,7 @@
                 width: 60%;
                 font-size: 4rem;
             }
-            
         }
-        background: url("assets/ui_imgs/home-books.png") no-repeat center center/cover;
-        background: url("./ui_imgs/home-books.png") no-repeat center center/cover;
     }
     
     .home_down {

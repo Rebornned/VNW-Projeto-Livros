@@ -1,0 +1,115 @@
+.main_home {
+  display: flex;
+  flex-direction: column;
+}
+.main_home .home_up {
+  display: flex;
+  align-items: center;
+  height: 86vh;
+  background: url("assets/ui_imgs/home-books.png") no-repeat center center/cover;
+  background: url("./ui_imgs/home-books.png") no-repeat center center/cover;
+}
+.main_home .home_up h1 {
+  padding-left: 4vw;
+  color: white;
+  width: 3rem;
+  font-size: 3rem;
+}
+@media (min-width: 1024px) {
+  .main_home .home_up h1 {
+    width: 30rem;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 650px) {
+  .main_home .home_up h1 {
+    width: 80%;
+  }
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+  .main_home .home_up h1 {
+    padding-left: 8%;
+    width: 60%;
+    font-size: 4rem;
+  }
+}
+.main_home .home_down {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+.main_home .home_down h2 {
+  padding-left: 2vw;
+  text-align: center;
+  color: #005695;
+  font-size: 40px;
+}
+.main_home .home_down div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 1231px) {
+  .main_home .home_down div {
+    flex-wrap: wrap;
+    padding: 0 3% 0 3%;
+  }
+}
+@media (min-width: 830px) and (max-width: 890px) {
+  .main_home .home_down div {
+    padding-right: 4%;
+  }
+}
+@media (max-width: 829px) {
+  .main_home .home_down div {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+.main_home .home_down div figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 2%;
+  width: 18rem;
+  background-color: rgba(1, 87, 148, 0.3019607843);
+  border-radius: 10px;
+  /*
+  @media(max-width: 829px) {
+      width: 36vw;
+      p {
+          text-align: center;
+          width: auto;
+      }
+  }
+  @media(max-width: 650px) {
+      width: 40vw;
+  }
+  @media(min-width: 400px) and (max-width: 530px) {
+      width: 60vw;
+  }
+
+  @media(max-width: 400px) {
+      width: 60vw;
+  }*/
+}
+.main_home .home_down div figure p {
+  height: 10rem;
+  font-size: 1.5rem;
+  text-align: center;
+  align-content: initial;
+}
+@media (max-width: 1085px) {
+  .main_home .home_down div figure p {
+    padding-right: 5%;
+    align-content: center;
+  }
+}
+@media (max-width: 830px), (max-width: 890px) {
+  .main_home .home_down div figure {
+    padding: 4%;
+  }
+}/*# sourceMappingURL=design-home.css.map */
